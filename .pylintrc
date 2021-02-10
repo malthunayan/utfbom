@@ -1,0 +1,10 @@
+[MESSAGES CONTROL]
+
+disable=
+    invalid-name,
+    missing-docstring,
+    redefined-outer-name,
+    # handled by black
+    format,
+    # handled by isort
+    wrong-import-order
