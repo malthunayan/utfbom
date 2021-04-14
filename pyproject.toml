@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "utfbom"
-version = "0.1.0"
+version = "0.1.1"
 description = "A CLI app to encode CSV files in UTF-8 with BOM."
 authors = ["Mohammad Al-Thunayan <malthunayan4@gmail.com>"]
 
