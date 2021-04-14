@@ -4,9 +4,11 @@ import pathlib
 
 
 def convert_to_utf8_sig(path: pathlib.Path) -> None:
-    with open(path, "r+", encoding="utf-8-sig") as f:
+    with open(path, "r") as f:
         rows = list(csv.reader(f))
-        f.seek(0, 0)
+
+    path.unlink()
+    with open(path, "w", encoding="utf-8-sig") as f:
         csv.writer(f).writerows(rows)
 
 
